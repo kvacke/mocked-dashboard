@@ -117,6 +117,47 @@ const MockSchema: FC = () => {
       >
         Viewing mode
       </div>
+      <div style={{ opacity: 0.6, marginBottom: 8, fontSize: 14 }}>
+        Created 23/02/2023
+      </div>
+      <div
+        style={{
+          fontWeight: 600,
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          marginBottom: 32,
+        }}
+      >
+        <img
+          alt=""
+          style={{
+            objectFit: "cover",
+            width: 24,
+            height: 24,
+            borderRadius: 12,
+            marginRight: 8,
+          }}
+          src={
+            "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          }
+        />
+        <div style={{ marginRight: 8 }}>Chloe Haney</div>
+        <div
+          style={{
+            padding: 4,
+            paddingLeft: 8,
+            paddingRight: 8,
+            backgroundColor: "lightgrey",
+            borderRadius: 24,
+            fontSize: 14,
+            cursor: "pointer",
+          }}
+        >
+          and 2 others
+        </div>
+      </div>
+
       <div
         style={{
           position: "relative",
