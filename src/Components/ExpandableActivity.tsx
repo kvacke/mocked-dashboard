@@ -5,8 +5,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, FC } from "react";
-import { colors } from "./colors";
-import { Activity } from "./types";
+import { colors } from "../colors";
+import { Activity } from "../types";
 
 const ExpandableActivity: FC<{
   activity: Activity;

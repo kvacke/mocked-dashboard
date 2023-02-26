@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import Card from "./Card";
+import Card from "../Components/Card";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

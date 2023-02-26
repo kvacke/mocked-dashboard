@@ -1,5 +1,5 @@
 import { FC, ReactNode, useState } from "react";
-import increaseBrightness from "./utils";
+import increaseBrightness from "../utils";
 
 type NotificationProps = {
   children?: ReactNode;

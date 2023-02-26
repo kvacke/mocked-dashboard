@@ -1,9 +1,9 @@
 import { FC, useEffect, useState } from "react";
-import { Activity } from "./types";
-import ExpandableActivity from "./ExpandableActivity";
-import { colors } from "./colors";
-import Card from "./Card";
-import { loremIpsum } from "./loremIpsum";
+import { Activity } from "../types";
+import ExpandableActivity from "../Components/ExpandableActivity";
+import { colors } from "../colors";
+import Card from "../Components/Card";
+import { loremIpsum } from "../loremIpsum";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,

@@ -1,45 +1,10 @@
-import { FC, useEffect, useState, useCallback } from "react";
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  PieChart,
-  Pie,
-  Sector,
-  Cell,
-  Radar,
-  RadarChart,
-  PolarGrid,
-  PolarAngleAxis,
-  PolarRadiusAxis,
-} from "recharts";
+import { FC } from "react";
 
-import Card from "./Card";
-import ExpandableActivity from "./ExpandableActivity";
-import { Activity } from "./types";
-import activities from "./MOCK_DATA_2.json";
-import dayjs from "dayjs";
-import { colors } from "./colors";
-import increaseBrightness from "./utils";
-import jens from "./linkedin.jpeg";
-import Notification from "./Notification";
+import Card from "../Components/Card";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBell,
-  faArrowTrendUp,
-  faPlus,
-  faUserPlus,
-  faEdit,
-  faPen,
-  faPenAlt,
-  faEnvelope,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faPen, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { colors } from "../colors";
 
 const mockMembers1 = [
   {
@@ -89,7 +54,7 @@ const mockMembers2 = [
   },
 ];
 
-const Teams2: FC = () => {
+const Teams: FC = () => {
   return (
     <div
       style={{
@@ -102,6 +67,10 @@ const Teams2: FC = () => {
       <div style={{ fontSize: 32, fontWeight: 600, marginBottom: 24 }}>
         Teams
       </div>
+      <button className="button-1" style={{ marginBottom: 24 }}>
+        <FontAwesomeIcon icon={faPlus} style={{ marginRight: 4 }} />
+        <span>Create new team</span>
+      </button>
       <>
         <div
           style={{
@@ -359,4 +328,4 @@ const Teams2: FC = () => {
   );
 };
 
-export default Teams2;
+export default Teams;

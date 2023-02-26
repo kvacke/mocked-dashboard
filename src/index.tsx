@@ -9,11 +9,11 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import App from "./Home";
-import Schemas from "./Schemas";
-import Settings from "./Settings";
-import MockSchema from "./MockSchema";
-import Teams2 from "./Teams2";
+import App from "./Pages/Home";
+import Schemas from "./Pages/Schemas";
+import Settings from "./Pages/Settings";
+import MockSchema from "./Pages/MockSchema";
+import Teams from "./Pages/Teams";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path: "teams",
-        element: <Teams2 />,
+        element: <Teams />,
       },
       {
         path: "settings",

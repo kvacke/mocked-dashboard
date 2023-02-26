@@ -8,14 +8,14 @@ import {
   Tooltip,
 } from "recharts";
 
-import Card from "./Card";
-import { Activity } from "./types";
-import activities from "./MOCK_DATA_2.json";
+import Card from "../Components/Card";
+import { Activity } from "../types";
+import activities from "../MOCK_DATA_2.json";
 import dayjs from "dayjs";
-import { colors } from "./colors";
-import increaseBrightness from "./utils";
-import jens from "./linkedin.jpeg";
-import Notification from "./Notification";
+import { colors } from "../colors";
+import increaseBrightness from "../utils";
+import jens from "../linkedin.jpeg";
+import Notification from "../Components/Notification";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
