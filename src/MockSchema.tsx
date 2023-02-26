@@ -47,7 +47,6 @@ const MockSchema: FC = () => {
           }
         });
       } else {
-        //roten
         root = t;
       }
     });

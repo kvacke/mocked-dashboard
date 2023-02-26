@@ -4,23 +4,9 @@ import {
   faLeaf,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState, FC, useEffect } from "react";
-import { act } from "react-dom/test-utils";
+import { useState, FC } from "react";
 import { colors } from "./colors";
 import { Activity } from "./types";
-
-const compare = (a: Activity, b: Activity) => {
-  if (a.children && b.children) {
-    return 0;
-  }
-  if (!a.children) {
-    return 1;
-  }
-  if (!b.children) {
-    return -1;
-  }
-  return 0;
-};
 
 const ExpandableActivity: FC<{
   activity: Activity;
@@ -30,10 +16,6 @@ const ExpandableActivity: FC<{
 }> = ({ activity, depth, onClick, focusedActivityId }) => {
   const [expanded, setExpanded] = useState(depth === 0);
   const [hover, setHover] = useState(false);
-
-  if (activity.children) {
-    activity.children.sort(compare);
-  }
 
   const handleClick = () => {
     setExpanded(!expanded);
@@ -88,15 +70,34 @@ const ExpandableActivity: FC<{
         {expanded &&
           activity.children &&
           activity.children.map((c) => {
-            return (
-              <ExpandableActivity
-                key={c.id}
-                activity={c}
-                depth={depth + 1}
-                focusedActivityId={focusedActivityId}
-                onClick={onClick}
-              />
-            );
+            if (c.children) {
+              return (
+                <ExpandableActivity
+                  key={c.id}
+                  activity={c}
+                  depth={depth + 1}
+                  focusedActivityId={focusedActivityId}
+                  onClick={onClick}
+                />
+              );
+            }
+            return <></>;
+          })}
+        {expanded &&
+          activity.children &&
+          activity.children.map((c) => {
+            if (!c.children) {
+              return (
+                <ExpandableActivity
+                  key={c.id}
+                  activity={c}
+                  depth={depth + 1}
+                  focusedActivityId={focusedActivityId}
+                  onClick={onClick}
+                />
+              );
+            }
+            return <></>;
           })}
       </>
     </div>
