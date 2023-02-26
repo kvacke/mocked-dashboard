@@ -69,7 +69,7 @@ const Teams: FC = () => {
       </div>
       <button className="button-1" style={{ marginBottom: 24 }}>
         <FontAwesomeIcon icon={faPlus} style={{ marginRight: 4 }} />
-        <span>Create new team</span>
+        <span>Create team</span>
       </button>
       <>
         <div

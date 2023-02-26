@@ -25,7 +25,7 @@ const Schemas: FC = () => {
       </div>
       <button className="button-1" style={{ marginBottom: 16 }}>
         <FontAwesomeIcon icon={faPlus} style={{ marginRight: 4 }} />
-        <span>New schema</span>
+        <span>Create schema</span>
       </button>
 
       <div style={{ display: "flex", flexDirection: "row", width: "100%" }}>
