@@ -201,7 +201,7 @@ const Home: FC = () => {
                 style={{ fontSize: 24, marginRight: 8 }}
                 icon={faArrowTrendDown}
               />
-              <div style={{ fontWeight: 700, marginRight: 8 }}>17%</div>
+              <div style={{ fontWeight: 700, marginRight: 8 }}>-17%</div>
               <div style={{ color: "black", opacity: 0.3 }}>
                 Since last month
               </div>
