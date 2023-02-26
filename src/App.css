@@ -34,6 +34,26 @@
   touch-action: manipulation;
 }
 
+.details-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  border-radius: 6px;
+  color: #3d3d3d;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.details-button:hover {
+  background-color: rgb(171, 171, 171);
+}
+
 .button-1:hover {
   background-color: #298be0;
 }

@@ -61,7 +61,6 @@ const MockSchema: FC = () => {
 
   const focusActivity = (id: string) => {
     const activity = activities?.find((a) => a.id === id);
-    console.log(activities);
     if (activity) {
       setFocusedActivity(activity);
     }
@@ -136,8 +135,9 @@ const MockSchema: FC = () => {
             />
           )}
         </div>
-        <div style={{ width: "40%" }}>
-          {focusedActivity ? (
+
+        {focusedActivity ? (
+          <div className="fade-in" style={{ width: "40%" }}>
             <Card
               style={{
                 padding: 24,
@@ -206,8 +206,8 @@ const MockSchema: FC = () => {
 
               <div>{description}</div>
             </Card>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
       </div>
     </div>
   );

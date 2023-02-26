@@ -15,6 +15,7 @@ import Teams from "./Teams";
 import Settings from "./Settings";
 import Schema from "./MockSchema";
 import MockSchema from "./MockSchema";
+import Teams2 from "./Teams2";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "teams",
-        element: <Teams />,
+        element: <Teams2 />,
       },
       {
         path: "settings",
