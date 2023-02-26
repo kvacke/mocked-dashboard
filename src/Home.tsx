@@ -381,7 +381,7 @@ const Home: FC = () => {
               >
                 <img
                   src={
-                    "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1234&q=80"
+                    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                   }
                   width={50}
                   height={50}
@@ -392,7 +392,7 @@ const Home: FC = () => {
                     objectFit: "cover",
                   }}
                 />
-                <div style={{ marginRight: 4 }}>Josh Paulsen added report</div>
+                <div style={{ marginRight: 4 }}>Anton Cannon added report</div>
                 <div style={{ fontWeight: 700 }}>January 2023</div>
                 <div
                   style={{
@@ -419,7 +419,7 @@ const Home: FC = () => {
               >
                 <img
                   src={
-                    "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80"
+                    "https://images.unsplash.com/photo-1609188076864-c35269136b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                   }
                   width={50}
                   height={50}
@@ -431,7 +431,7 @@ const Home: FC = () => {
                   }}
                 />
                 <div style={{ marginRight: 4 }}>
-                  Tessa Horton liked your comment
+                  Sofia Osborne liked your comment
                 </div>
                 <div
                   style={{

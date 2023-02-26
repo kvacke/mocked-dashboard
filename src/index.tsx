@@ -4,7 +4,11 @@ import "./index.css";
 import Root from "./Root";
 import reportWebVitals from "./reportWebVitals";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import App from "./Home";
 import Schemas from "./Schemas";
 import Teams from "./Teams";
@@ -21,6 +25,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     children: [
+      {
+        path: "/",
+        element: <Navigate to={"home"} />,
+      },
       {
         index: true,
         path: "home",
@@ -41,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "settings",
         element: <Settings />,
+      },
+      {
+        path: "*",
+        element: <Navigate to={"home"} />,
       },
     ],
   },
