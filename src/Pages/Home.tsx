@@ -360,13 +360,16 @@ const Home: FC = () => {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
+                backgroundColor: "#f1f1f1",
+                borderTopLeftRadius: 8,
+                borderTopRightRadius: 8,
               }}
             >
               <FontAwesomeIcon
-                style={{ fontSize: 24, marginRight: 8 }}
+                style={{ fontSize: 18, marginRight: 8 }}
                 icon={faBell}
               />
-              Notifications
+              <div>Notifications</div>
             </div>
 
             <Notification>
