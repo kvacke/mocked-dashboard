@@ -36,6 +36,10 @@ const setRandomFootprintOnLeaves = (activity: Activity) => {
 
 const data = [
   {
+    name: "Feb 22",
+    footprint: 2000,
+  },
+  {
     name: "Mar 22",
     footprint: 1200,
   },
