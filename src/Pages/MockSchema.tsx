@@ -224,21 +224,21 @@ const MockSchema: FC = () => {
                   <div style={{ marginBottom: 8 }}>
                     <FontAwesomeIcon
                       icon={faBoxes}
-                      style={{ marginRight: 8 }}
+                      style={{ marginRight: 8, width: 20 }}
                     />
                     {randomIntFromInterval(1, 100)} kg / unit
                   </div>
                   <div style={{ marginBottom: 8 }}>
                     <FontAwesomeIcon
                       icon={faGasPump}
-                      style={{ marginRight: 8 }}
+                      style={{ marginRight: 8, width: 20 }}
                     />
-                    {randomIntFromInterval(10, 1000)} m² / something
+                    {randomIntFromInterval(10, 1000)} m³ / something
                   </div>
                   <div style={{ marginBottom: 8 }}>
                     <FontAwesomeIcon
                       icon={faEarth}
-                      style={{ marginRight: 8 }}
+                      style={{ marginRight: 8, width: 20 }}
                     />
                     {randomIntFromInterval(0, 25)} thingies
                   </div>

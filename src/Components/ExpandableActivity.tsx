@@ -81,7 +81,7 @@ const ExpandableActivity: FC<{
                 />
               );
             }
-            return <></>;
+            return null;
           })}
         {expanded &&
           activity.children &&
@@ -97,7 +97,7 @@ const ExpandableActivity: FC<{
                 />
               );
             }
-            return <></>;
+            return null;
           })}
       </>
     </div>
