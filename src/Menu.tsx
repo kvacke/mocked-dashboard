@@ -47,12 +47,7 @@ const Menu: FC = () => {
         paddingTop: 32,
       }}
     >
-      <img
-        src={logo}
-        width="80"
-        style={{ alignSelf: "center", marginBottom: 32 }}
-        alt=""
-      />
+      
       {items.map((i, index) => {
         return (
           <NavLink

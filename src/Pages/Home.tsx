@@ -453,45 +453,7 @@ const Home: FC = () => {
                 </div>
               </div>
             </Notification>
-            <Notification>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  paddingLeft: 10,
-                  position: "relative",
-                }}
-              >
-                <img
-                  src={
-                    "https://media.licdn.com/dms/image/C4E0BAQE9nsRrnWaZsA/company-logo_200_200/0/1629118669766?e=2147483647&v=beta&t=6LNHw8peowEfXfIcIWZxgBKvk7dode8o4fk0p4U_Bxk"
-                  }
-                  width={50}
-                  height={50}
-                  alt=""
-                  style={{
-                    borderRadius: 25,
-                    marginRight: 8,
-                    objectFit: "contain",
-                  }}
-                />
-                <div style={{ marginRight: 4 }}>
-                  Version 1.11.1 is released!
-                </div>
-                <div
-                  style={{
-                    position: "absolute",
-                    fontSize: 12,
-                    top: 0,
-                    right: 0,
-                    opacity: 0.5,
-                  }}
-                >
-                  1 hour ago
-                </div>
-              </div>
-            </Notification>
+            
             <Notification>
               <div
                 style={{
