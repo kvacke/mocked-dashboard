@@ -30,7 +30,13 @@ const MockSchema: FC = () => {
   const fetchActivityTypes = async () => {
     const response = await fetch(
       "https://emissions-test.theontologyway.eu/graphql?query={activityTypes%20{name,id,superType{id,name}}}"
-    ).then((r) => r.json());
+    ).then((r) => r.json()).catch((e) => {
+      
+      console.log(e)
+    });
+    if(!response){
+      return
+    }
 
     let root = undefined;
     const types = response.data.activityTypes;
